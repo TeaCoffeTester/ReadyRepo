@@ -200,7 +200,7 @@
       <delay>1000</delay>
     </con:config>
   </con:testStep>
-  <con:testStep type="calltestcase" name="Run TestCase" id="68d4bf3f-d09f-472c-9572-f7da7d9a985c">
+  <con:testStep type="calltestcase" name="Run TestCase" id="68d4bf3f-d09f-472c-9572-f7da7d9a985c" disabled="true">
     <con:settings/>
     <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:properties/>
