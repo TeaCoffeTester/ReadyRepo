@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:XmlRpcService" id="18b0e0a1-8e57-4294-bb00-2215d352a917" name="Xmlrpcapi.rem" type="xmlrpc" definitionUrl="http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="18b0e0a1-8e57-4294-bb00-2215d352a917fileName">Xmlrpcapi.rem</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+  </con:endpoints>
+</con:interface>

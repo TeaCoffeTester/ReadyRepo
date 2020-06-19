@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="1a29b75a-aaa6-46fb-a13e-28517bf060e3" isOneWay="false" action="sayHello" name="sayHello" bindingOperationName="sayHello" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1a29b75a-aaa6-46fb-a13e-28517bf060e3fileName">sayHello</con:setting>
+  </con:settings>
+</con:operation>

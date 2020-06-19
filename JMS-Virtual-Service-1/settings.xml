@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customMockService id="58288431-09fe-48a7-96de-c5f27d69f953" name="JMS Virtual Service 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="58288431-09fe-48a7-96de-c5f27d69f953fileName">JMS-Virtual-Service-1</con:setting>
+  </con:settings>
+  <con:properties>
+    <con:property>
+      <con:name>jmsMockService.ttlHopLimit</con:name>
+      <con:value>10</con:value>
+    </con:property>
+  </con:properties>
+  <con:constraints>
+    <con:congestion>0</con:congestion>
+    <con:inputBandwidth>-1</con:inputBandwidth>
+    <con:outputBandwidth>-1</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>1</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>1</con:coreThreadPoolCapacity>
+    <con:virtError>
+      <con:start>0</con:start>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:virtProperties>
+    <con:property>
+      <con:name>mockServiceType</con:name>
+      <con:value>JMS</con:value>
+    </con:property>
+  </con:virtProperties>
+</con:customMockService>

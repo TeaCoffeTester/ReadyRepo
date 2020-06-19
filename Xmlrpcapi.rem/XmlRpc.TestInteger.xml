@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestInteger" help="         Four-byte signed integer       " id="9da4b3f8-0d9d-4dc1-bc03-ea75b7efda3e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9da4b3f8-0d9d-4dc1-bc03-ea75b7efda3efileName">XmlRpc.TestInteger</con:setting>
+  </con:settings>
+  <con:resultParameter>int</con:resultParameter>
+  <con:parameter>int</con:parameter>
+</con:method>

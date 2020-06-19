@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customMockService id="2fa1c5e8-645d-45bc-9319-60aebd1f09fa" name="TCP Virtual Service 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2fa1c5e8-645d-45bc-9319-60aebd1f09fafileName">TCP-Virtual-Service-1</con:setting>
+  </con:settings>
+  <con:properties>
+    <con:property>
+      <con:name>tcpMockService.port</con:name>
+      <con:value>9897</con:value>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.requestDelimiterType</con:name>
+      <con:value>Segment Forwarding</con:value>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.requestDelimiterParams</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.responseDelimiterType</con:name>
+      <con:value>Segment Forwarding</con:value>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.responseDelimiterParams</con:name>
+      <con:value/>
+    </con:property>
+  </con:properties>
+  <con:constraints>
+    <con:congestion>0</con:congestion>
+    <con:inputBandwidth>-1</con:inputBandwidth>
+    <con:outputBandwidth>-1</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+    <con:virtError>
+      <con:start>0</con:start>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:virtProperties>
+    <con:property>
+      <con:name>mockServiceType</con:name>
+      <con:value>TCP</con:value>
+    </con:property>
+  </con:virtProperties>
+</con:customMockService>
