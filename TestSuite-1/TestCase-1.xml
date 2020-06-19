@@ -200,14 +200,6 @@
       <delay>1000</delay>
     </con:config>
   </con:testStep>
-  <con:testStep type="calltestcase" name="Run TestCase" id="68d4bf3f-d09f-472c-9572-f7da7d9a985c" disabled="true">
-    <con:settings/>
-    <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:properties/>
-      <con:returnProperties/>
-      <con:runMode>PARALLELL</con:runMode>
-    </con:config>
-  </con:testStep>
   <con:testStep type="properties" name="Properties" id="394607b4-b555-4310-bd17-32ff717895b5">
     <con:settings/>
     <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
