@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:customMockService id="50ba6c4f-57e6-4372-85e7-b71ba90ef39b" name="JDBC Virtual Service 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>123</con:description>
   <con:settings>
     <con:setting id="50ba6c4f-57e6-4372-85e7-b71ba90ef39bfileName">JDBC-Virtual-Service-1</con:setting>
   </con:settings>

@@ -5,6 +5,7 @@
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="datasource" name="DataSource" id="3e4defa2-2856-4e82-9891-984be6cb16b8">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:dataSource type="Data Generator">
@@ -34,6 +35,7 @@
       <con:restartShared>true</con:restartShared>
       <con:property>username</con:property>
       <con:property>password</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
@@ -41,7 +43,10 @@
     <con:settings/>
     <con:config service="Ecommerce" methodName="Login" resourcePath="/login/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="REST Request" id="99c4ae8a-b803-4c1c-ac1f-edd091cebec5" mediaType="application/json">
-        <con:settings/>
+        <con:description>123</con:description>
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://localhost:8084</con:endpoint>
         <con:request/>
@@ -60,6 +65,7 @@
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="password" value="${DataSource#password}"/>
           <con:entry key="username" value="${DataSource#username}"/>
@@ -68,6 +74,7 @@
     </con:config>
   </con:testStep>
   <con:testStep type="datasourceloop" name="DataSource Loop" id="88da984d-ae28-4ab6-88b5-169e83392c0b">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config>
       <dataSourceStep>DataSource</dataSourceStep>
@@ -81,16 +88,19 @@
       <con:interface>Hello_Binding</con:interface>
       <con:operation>sayHello</con:operation>
       <con:request name="SOAP Request" id="e7831683-66d6-4561-8f6d-579608069049">
-        <con:settings/>
+        <con:description>123</con:description>
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.examples.com/SayHello/</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:examples:helloservice">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <urn:sayHello soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
-         <firstName xsi:type="xsd:string">?</firstName>\r
-      </urn:sayHello>\r
-   </soapenv:Body>\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:examples:helloservice">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:sayHello soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <firstName xsi:type="xsd:string">?</firstName>
+      </urn:sayHello>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request>
         <con:assertion type="Valid HTTP Status Codes" id="3acd1740-b2c6-49d3-ab1f-356bd6be4aca" name="Valid HTTP Status Codes">
           <con:settings/>
@@ -111,34 +121,43 @@
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
-        <con:wsaConfig action="sayHello"/>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="sayHello" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
       </con:request>
     </con:config>
   </con:testStep>
   <con:testStep type="httprequest" name="HTTP Request" id="126494ea-a7ac-470d-8a48-dcb302c65b45">
     <con:settings/>
     <con:config method="GET" xsi:type="con:HttpRequest" id="f5cd50cd-52a2-4f8d-9573-9aaf728f515b" name="HTTP Request" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:settings/>
-      <con:endpoint/>
+      <con:description>123</con:description>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint xsi:nil="true"/>
       <con:request/>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:config>
   </con:testStep>
   <con:testStep type="amfrequest" name="AMF Request" id="2a6585aa-d07f-4cd8-ada8-06f2f46d09ca">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config xsi:type="con:AMFRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:properties/>
     </con:config>
   </con:testStep>
   <con:testStep type="jdbc" name="JDBC Request" id="bb50dfad-19dd-4017-9020-5e31df6ed3f4">
+    <con:description>123</con:description>
     <con:settings>
       <con:setting id="prettyPrintResponse">true</con:setting>
     </con:settings>
     <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName xsi:nil="true"/>
       <con:connectionProperties/>
       <con:properties/>
     </con:config>
@@ -147,10 +166,15 @@
     <con:settings/>
     <con:config interface="GraphQL Service 1" operationName="artworkAttributionClasses" operationType="query" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:request name="GraphQL Query" id="d3e531fb-2294-459a-9450-99a4c2578e8e">
-        <con:settings/>
+        <con:description>123</con:description>
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:request/>
-        <con:credentials/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
       </con:request>
     </con:config>
   </con:testStep>
@@ -158,22 +182,33 @@
     <con:settings/>
     <con:config interface="GraphQL Service 1" operationName="createBidder" operationType="mutation" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:request name="GraphQL Mutation" id="7fd7721c-e7dd-40b0-ac16-ad05aef1eddf">
-        <con:settings/>
+        <con:description>123</con:description>
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:request/>
-        <con:credentials/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
       </con:request>
     </con:config>
   </con:testStep>
   <con:testStep type="graphqltestrequest" name="GraphQL Request" id="c6fef6ac-4f17-4d2e-890b-0ae51e445eaf">
     <con:settings/>
     <con:config xsi:type="con:GraphQLTestRequest" id="2917f2fc-4106-4462-9505-044dd8f8c142" name="GraphQL Request" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:settings/>
+      <con:description>123</con:description>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:request/>
-      <con:credentials/>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
     </con:config>
   </con:testStep>
   <con:testStep type="XmlRpcTestStep" name="XML-RPC" id="275a5885-4360-4441-8428-a68da7d3d2c2">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config xsi:type="con:XmlRpcStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:service>Xmlrpcapi.rem</con:service>
@@ -184,44 +219,63 @@
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
         <con:request/>
-        <con:credentials/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
       </con:request>
       <con:parameter>base64</con:parameter>
       <con:resultParameter>base64</con:resultParameter>
     </con:config>
   </con:testStep>
   <con:testStep type="manualTestStep" name="Manual" id="85360a52-b854-4b5c-8117-03c607afa88c">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </con:testStep>
   <con:testStep type="delay" name="Delay" id="09ec5f57-1f64-4953-9679-a4f1cebb6da0">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config>
       <delay>1000</delay>
     </con:config>
   </con:testStep>
   <con:testStep type="properties" name="Properties" id="394607b4-b555-4310-bd17-32ff717895b5">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:properties/>
     </con:config>
   </con:testStep>
   <con:testStep type="transfer" name="Property Transfer" id="a1a73b5b-f98a-4985-9de6-0c892be02921">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </con:testStep>
   <con:testStep type="propertyWaitTestStep" name="Property Wait" id="3360dad9-43e8-402d-b51b-4caea69fa8c4">
+    <con:description>123</con:description>
     <con:settings/>
   </con:testStep>
   <con:testStep type="datasink" name="DataSink" id="8bda744e-d24d-4078-96f1-9e59cdd0ffc0">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:properties/>
     </con:config>
   </con:testStep>
   <con:testStep type="datagen" name="DataGen" id="ab8ae54e-9b73-4dcc-a8e5-da5db42ef18c">
+    <con:description>123</con:description>
     <con:settings/>
     <con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </con:testStep>
+  <con:testStep type="calltestcase" name="Run TestCase" id="d59d1764-bc20-400a-a01a-7d34d6208df0">
+    <con:description>123</con:description>
+    <con:settings/>
+    <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:targetTestCase>d7973307-d210-4bb5-b4c2-807227c1e902</con:targetTestCase>
+      <con:properties/>
+      <con:returnProperties/>
+      <con:runMode>PARALLELL</con:runMode>
+    </con:config>
   </con:testStep>
   <con:properties/>
   <con:reportParameters/>

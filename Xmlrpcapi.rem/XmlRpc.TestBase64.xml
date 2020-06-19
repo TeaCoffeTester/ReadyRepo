@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:method name="XmlRpc.TestBase64" help="         Base64       " id="63c6e161-cf6d-4ee7-8e43-77ba3630084b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>123</con:description>
   <con:settings>
     <con:setting id="63c6e161-cf6d-4ee7-8e43-77ba3630084bfileName">XmlRpc.TestBase64</con:setting>
   </con:settings>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xsi:type="con:GraphQLService" id="cdd46676-d9a3-43c8-a086-084eceef261f" name="GraphQL Service 1" type="graphql" definitionUrl="file:/C:/Projects/readyInfo/Definition/artsy.graphql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>123</con:description>
   <con:settings>
     <con:setting id="cdd46676-d9a3-43c8-a086-084eceef261ffileName">GraphQL-Service-1</con:setting>
   </con:settings>

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:operationGroup type="query" name="Queries" id="c4df3574-7b77-47e8-8194-482f98ad4028" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>123</con:description>
   <con:settings>
     <con:setting id="c4df3574-7b77-47e8-8194-482f98ad4028fileName">Queries</con:setting>
   </con:settings>
   <con:graphQLOperation name="artworkAttributionClasses" bindingOperationName="artworkAttributionClasses" id="f4a2355a-20d5-4882-9665-7c87ed937adf">
+    <con:description>123</con:description>
     <con:settings/>
     <con:graphQLRequest name="artworkAttributionClasses" id="89295d28-3727-4b85-91f1-e48508c031ad">
-      <con:settings/>
+      <con:description>123</con:description>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:request>{"query":"query {\n  artworkAttributionClasses {\n    id\n    internalID\n    name\n    info\n    shortDescription\n    longDescription\n  }\n}\n","operationName":null,"variables":null}</con:request>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
