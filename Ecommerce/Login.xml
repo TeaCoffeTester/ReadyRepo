@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:resource name="Login" path="/login/" id="ed379f4d-79f8-49ce-af8a-3340334b1790" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:description/>
   <con:settings>
     <con:setting id="ff930a3e-8923-4842-9db0-3e7356e664f9fileName">Login</con:setting>
     <con:setting id="ed379f4d-79f8-49ce-af8a-3340334b1790fileName">Login</con:setting>
@@ -23,6 +24,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="Login" id="8a2a74c2-299c-4af4-9ce4-548941aa6e5d" method="GET">
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -198,6 +200,7 @@
       <con:element>data</con:element>
     </con:representation>
     <con:request name="Request 1" id="af9f46ad-d5ad-4c3c-bcde-e2f266c3dc2c" mediaType="application/json" postQueryString="false">
+      <con:description/>
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
       </con:settings>

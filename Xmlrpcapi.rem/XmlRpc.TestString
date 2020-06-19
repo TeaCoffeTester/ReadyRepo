@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestString" help="         String       " id="1b3b7414-b491-4cd0-aad5-239df9fb6221" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1b3b7414-b491-4cd0-aad5-239df9fb6221fileName">XmlRpc.TestString</con:setting>
+  </con:settings>
+  <con:resultParameter>string</con:resultParameter>
+  <con:parameter>string</con:parameter>
+</con:method>

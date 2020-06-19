@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestMethod" help="         Method without parameters       " id="0ebc2899-fa12-4597-a41b-d0692706c839" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0ebc2899-fa12-4597-a41b-d0692706c839fileName">XmlRpc.TestMethod</con:setting>
+  </con:settings>
+  <con:resultParameter>string</con:resultParameter>
+</con:method>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestDateTime" help="         DateTime       " id="90fb0e13-06a2-42af-a7a7-883a0626bb66" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="90fb0e13-06a2-42af-a7a7-883a0626bb66fileName">XmlRpc.TestDateTime</con:setting>
+  </con:settings>
+  <con:resultParameter>dateTime</con:resultParameter>
+  <con:parameter>dateTime</con:parameter>
+</con:method>
