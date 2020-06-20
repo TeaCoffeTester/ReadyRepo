@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:operationGroup type="mutation" name="Mutations" id="f6d6e5f7-74c8-4a28-96e5-d01639f09a45" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>123</con:description>
+  <con:description>321</con:description>
   <con:settings>
     <con:setting id="f6d6e5f7-74c8-4a28-96e5-d01639f09a45fileName">Mutations</con:setting>
   </con:settings>
   <con:graphQLOperation name="createBidder" bindingOperationName="createBidder" id="5220624c-f9af-415c-9099-2be9962afc21">
-    <con:description>123</con:description>
+    <con:description>321</con:description>
     <con:settings/>
     <con:graphQLRequest name="createBidder" id="004113f5-1d18-414b-a274-f2b802861e41">
-      <con:description>123</con:description>
+      <con:description>321</con:description>
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>
