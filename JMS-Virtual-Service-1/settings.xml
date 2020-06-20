@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:customMockService id="58288431-09fe-48a7-96de-c5f27d69f953" name="JMS Virtual Service 1" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>123</con:description>
+  <con:description>321</con:description>
   <con:settings>
     <con:setting id="58288431-09fe-48a7-96de-c5f27d69f953fileName">JMS-Virtual-Service-1</con:setting>
   </con:settings>

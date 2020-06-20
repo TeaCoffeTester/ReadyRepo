@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:customMockService id="2fa1c5e8-645d-45bc-9319-60aebd1f09fa" name="TCP Virtual Service 1" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>123</con:description>
+  <con:description>321</con:description>
   <con:settings>
     <con:setting id="2fa1c5e8-645d-45bc-9319-60aebd1f09fafileName">TCP-Virtual-Service-1</con:setting>
   </con:settings>
